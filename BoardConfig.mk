@@ -102,6 +102,27 @@ TARGET_SCREEN_DENSITY := 440
 
 # Security Patch
 VENDOR_SECURITY_PATCH := 2024-01-05
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
+
+# Hardware
+BOARD_USES_QCOM_HARDWARE := true
+
+# HIDL
+DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/configs/vintf/vendor_framework_compatibility_matrix.xml \
+    $(DEVICE_PATH)/configs/vintf/xiaomi_framework_compatibility_matrix.xml \
+    $(DEVICE_PATH)/configs/vintf/device_framework_matrix.xml
+
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
+
+$(foreach sku, CN GL JP, \
+    $(eval ODM_MANIFEST_SKUS += $(sku)) \
+    $(eval ODM_MANIFEST_$(sku)_FILES += \
+        $(DEVICE_PATH)/configs/hidl/manifest_nfc.xml))
+
+DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/framework_manifest.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_stone
