@@ -108,13 +108,6 @@ PRODUCT_PACKAGES += \
     create_pl_dev.recovery
 
 # DT2W
-PRODUCT_COPY_FILES += \
-    hardware/qcom-caf/sm8450/display/config/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
-
-# Dolby
-$(call inherit-product, hardware/dolby/dolby.mk)
-
-# DRM
 PRODUCT_PACKAGES += \
     DT2W-Service-MT6789
 
