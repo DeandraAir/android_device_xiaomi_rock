@@ -101,9 +101,16 @@ persist.vendor.night.charge=true
 #ACC/GYRO/ALS/PS/ALS_DARK/LUX_B/SAR/SAR_SECONDARY/...MAX_NUM=15
 persist.vendor.sensor.cali_sensor=111001100000000
 
+# Addons
+persist.sys.display-rate=90
+ro.mtk_display_ovl_support=1
+ro.mtk_gpu_optimizations=1
+pm.sleep_mode=1
+ro.config.art_lowmem=true
+
 # gralloc4 log
 persist.log.tag.gralloc4=S
-
+ro.mtk_perfservice_support=1
 # Memory Optimization
 ro.config.dha_cached_min=16
 ro.config.dha_cached_max=32
