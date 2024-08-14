@@ -11,6 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/xiaomi/rock/device.mk)
 
+# Inherit from Basic Call Recorder
+$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
+
 # Inherit some common Rising stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
