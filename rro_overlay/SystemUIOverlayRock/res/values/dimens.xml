@@ -61,4 +61,9 @@
 
     <!-- Whether show refresh rate QS tile -->
     <bool name="config_showRefreshRateQsTile">true</bool>
+
+    <!-- Statusbar Height and padding -->
+    <dimen name="rounded_corner_content_padding">55px</dimen>
+    <dimen name="status_bar_padding_end">0px</dimen> 
+    <dimen name="status_bar_padding_start">0px</dimen>
 </resources>
