@@ -44,6 +44,9 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Sign
+-include vendor/lineage-priv/keys/keys.mk
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
