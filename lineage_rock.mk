@@ -20,6 +20,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Bootanimation Res
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Enable PIF by default
+PRODUCT_PROPERTY_OVERRIDES += persist.sys.pixelprops.gms=true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rock
 PRODUCT_NAME := lineage_rock
