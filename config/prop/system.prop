@@ -26,6 +26,10 @@ ro.vendor.radio.features_common=2
 vendor.rild.libpath=mtk-ril.so
 vendor.rild.libargs=-d /dev/ttyC0
 
+# Charger
+ro.charger.disable_init_blank=true
+ro.charger.enable_suspend=true
+
 # SLA
 ro.vendor.net.enable_sla=1
 
@@ -67,6 +71,7 @@ ro.kernel.zio=38,108,105,16
 # Display
 ro.sf.lcd_density=440
 sys.displayfeature_hidl=true
+persist.sys.brightness.low.gamma=true
 
 # performance
 ro.mtk_perf_simple_start_win=1
