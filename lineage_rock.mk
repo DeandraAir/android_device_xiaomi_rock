@@ -20,9 +20,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Bootanimation Res
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Enable PIF by default
-PRODUCT_PROPERTY_OVERRIDES += persist.sys.pixelprops.gms=true
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rock
 PRODUCT_NAME := lineage_rock
@@ -30,7 +27,7 @@ PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 22071219CG
 PRODUCT_MANUFACTURER := Xiaomi
 
-BUILD_FINGERPRINT :=POCO/stone_p_global/stone:14/UP1A.231005.007/V816.0.5.0.ULUIDXM:user/release-keys
-PRIVATE_BUILD_DESC="stone_p_global-user 14 UP1A.231005.007 V816.0.5.0.ULUIDXM release-keys"
+BUILD_FINGERPRINT :=POCO/stone_p_global/stone:13/TP1A.220624.014/V14.0.8.0.TLUMIXM:user/release-keys
+PRIVATE_BUILD_DESC="stone_p_global-user 13 TP1A.220624.014 V14.0.8.0.TLUMIXM release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
