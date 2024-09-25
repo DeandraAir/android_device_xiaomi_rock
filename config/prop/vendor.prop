@@ -121,6 +121,20 @@ ro.frp.pst=/dev/block/by-name/frp
 ro.soc.model=MT6789
 ro.soc.manufacturer=Mediatek
 
+# Touch Hax 
+touch.size.scale=1
+touch.size.bias=0
+touch.size.isSummed=0
+touch.pressure.scale=0.001
+touch.distance.calibration=none
+touch.distance.scale=0
+touch.coverage.calibration=box
+touch.gestureMode=spots
+MultitouchSettleInterval=1ms
+MultitouchMinDistance=1px
+TapInterval=1ms
+TapSlop=1px
+
 # Media
 media.c2.dmabuf.padding=3072
 persist.vendor.video.dfps.level=0
